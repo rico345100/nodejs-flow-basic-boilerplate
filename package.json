@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-flow-basic-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic Boilerplate for Node.js + Flow integration",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "flow",
+    "start": "node index; babel ./src/index.js -o ./build/index.js;node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rico345100/nodejs-flow-basic-boilerplate"
+  },
+  "keywords": [
+    "node.js",
+    "flow",
+    "babel"
+  ],
+  "author": ".modernator",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-flow": "^6.23.0",
+    "flow-cli": "0.0.0-pre"
+  }
+}
