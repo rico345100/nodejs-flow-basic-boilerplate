@@ -4,20 +4,30 @@ Super simple start setup for Node.js and Flow integration.
 ## What's in here?
 - Flow
 - Babel
+- Nodemon
 
-## How to run
-Just type 'npm start'.
+## Getting Started
+Install the dependencies first.
 
 ```bash
-$ npm start
+$ npm install
 ```
 
-This will proceed these steps:
+To run development environment(build & autoreload & serving)
 
-1. Run Flow. If there is any problem with your syntax, it will stop immediately.
-2. Run the simple script to check directory exists or not. If not, it generates for you. This is really important because Babel doesn't create directory for you.
-3. Run Babel to transpile the code.
-4. Run the transpiled Node.js code.
+```bash
+$ npm run dev
+```
+
+To just build:
+
+```bash
+$ npm run build-dev     // build with dev mode
+$ npm run build-prod    // build with production mode
+```
+
+Check the package.json to see available scripts.
+
 
 ## License
 MIT License. Do whatever you want.
